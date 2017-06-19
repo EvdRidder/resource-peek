@@ -5,11 +5,11 @@ import * as vscode from 'vscode';
  * @param position vscode Position
  * @param document vscode Document
  */
-export function GetClickedKeyAtPositionInDocument(position: vscode.Position, document: vscode.TextDocument) {
+export function GetKeyAtPositionInDocument(position: vscode.Position, document: vscode.TextDocument) {
     const resourceRegex = new RegExp(/(\'[^\`\~\!\@\#\%\^\&\*\(\)\=\+\[\{\]\}\\\|\;\:\'\"\,\<\>\/\?\s]+\' \| translate)/g);
     const wordRange = document.getWordRangeAtPosition(position, resourceRegex);
     if (!wordRange) {
-        // Return null because the clicked item is not a resource key.
+        // Return null because the item is not a resource key.
         return null;
     }
     return document.getText(wordRange).replace(/\'/g, '').replace(' | translate', '');

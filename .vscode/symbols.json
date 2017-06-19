@@ -1,0 +1,29 @@
+{
+    "symbols": {
+        "ResourceHoverProvider": {
+            "hasNamespace": false,
+            "type": 0,
+            "moduleName": "resource-hover-provider",
+            "relativePath": "src\\resource-hover-provider"
+        },
+        "ResourceDefinitionProvider": {
+            "hasNamespace": false,
+            "type": 0,
+            "moduleName": "resource-definition-provider",
+            "relativePath": "src\\resource-definition-provider"
+        },
+        "ResourceCompletionProvider": {
+            "hasNamespace": false,
+            "type": 0,
+            "moduleName": "resource-completion-provider",
+            "relativePath": "src\\resource-completion-provider"
+        }
+    },
+    "files": {
+        "src\\resource-completion-provider.ts": "2017-06-19T21:52:22.369Z",
+        "src\\resource-definition-provider.ts": "2017-06-19T21:50:41.653Z",
+        "src\\resource-hover-provider.ts": "2017-06-19T21:50:28.525Z",
+        "src\\extension.ts": "2017-06-19T19:33:00.981Z",
+        "src\\utils.ts": "2017-06-19T21:35:07.759Z"
+    }
+}

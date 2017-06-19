@@ -2,7 +2,7 @@
     "name": "resource-peek",
     "displayName": "Resource Peek",
     "description": "Peek for the text values of ngx-translate translation keys.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "license": "MIT",
     "publisher": "Hademar",
     "engines": {
@@ -33,6 +33,7 @@
     "devDependencies": {
         "typescript": "^2.0.3",
         "vscode": "^1.0.0",
-        "@types/node": "^6.0.40"
+        "@types/node": "^6.0.40",
+        "tslint": "^5.3.2"
     }
 }

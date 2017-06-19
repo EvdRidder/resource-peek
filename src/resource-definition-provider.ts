@@ -5,8 +5,10 @@ import * as utils from './utils'
 export class ResourceDefinitionProvider implements DefinitionProvider {
 
     provideDefinition(document: TextDocument, position: Position, token: CancellationToken): ProviderResult<Location[]> {
-        const clickedKey = utils.GetClickedKeyAtPositionInDocument(position, document);
-        if (!clickedKey) return null; // Returns null when no key exists.
+        const clickedKey = utils.GetKeyAtPositionInDocument(position, document);
+        if (!clickedKey) {
+            return null; // Returns null when no key exists.
+        }
 
         return utils.FindObjectsForKeyInResourceFiles(clickedKey)
             .then(foundObjects => {
