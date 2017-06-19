@@ -18,8 +18,7 @@
         "ngx-translate",
         "resource",
         "translation",
-        "peek",
-        "goto"
+        "peek"
     ],
     "activationEvents": [
         "onLanguage:html"
