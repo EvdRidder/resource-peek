@@ -1,5 +1,3 @@
-![logo](images/logo.svg)
-
 # Resource Peek
 
 This extension allows you to more easily see the value of your ngx-translate keys - without having to manually search for the key. This is done in two ways:
